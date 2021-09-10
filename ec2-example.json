@@ -1,0 +1,129 @@
+{
+  Instances: [{
+      AmiLaunchIndex: 0,
+      Architecture: "arm64",
+      BlockDeviceMappings: [{
+          DeviceName: "/dev/xvda",
+          Ebs: {
+            AttachTime: 2021-06-21 07:23:30 +0000 UTC,
+            DeleteOnTermination: false,
+            Status: "attached",
+            VolumeId: "vol-0e0e934604d87b2d2"
+          }
+        }],
+      BootMode: "uefi",
+      CapacityReservationSpecification: {
+        CapacityReservationPreference: "open"
+      },
+      ClientToken: "",
+      CpuOptions: {
+        CoreCount: 2,
+        ThreadsPerCore: 1
+      },
+      EbsOptimized: true,
+      EnaSupport: true,
+      EnclaveOptions: {
+        Enabled: false
+      },
+      HibernationOptions: {
+        Configured: false
+      },
+      Hypervisor: "xen",
+      IamInstanceProfile: {
+        Arn: "arn:aws:iam::630045169277:instance-profile/ecrroot",
+        Id: "AIPAZFMM6KZ6YPZ56YDLQ"
+      },
+      ImageId: "ami-0d5cf24fc86626f39",
+      InstanceId: "i-073f3089414a52004",
+      InstanceType: "t4g.small",
+      KeyName: "production-ec2",
+      LaunchTime: 2021-09-02 10:22:33 +0000 UTC,
+      MetadataOptions: {
+        HttpEndpoint: "enabled",
+        HttpProtocolIpv6: "disabled",
+        HttpPutResponseHopLimit: 1,
+        HttpTokens: "optional",
+        State: "applied"
+      },
+      Monitoring: {
+        State: "disabled"
+      },
+      NetworkInterfaces: [{
+          Attachment: {
+            AttachTime: 2021-06-21 07:23:29 +0000 UTC,
+            AttachmentId: "eni-attach-0f90dd069484198e9",
+            DeleteOnTermination: true,
+            DeviceIndex: 0,
+            NetworkCardIndex: 0,
+            Status: "attached"
+          },
+          Description: "Primary network interface",
+          Groups: [{
+              GroupId: "sg-02eb3d0d05d893ec1",
+              GroupName: "production-ec2"
+            }],
+          InterfaceType: "interface",
+          MacAddress: "02:81:67:07:b7:f4",
+          NetworkInterfaceId: "eni-0171063b4c3d99fb1",
+          OwnerId: "630045169277",
+          PrivateDnsName: "ip-10-0-100-146.ap-southeast-1.compute.internal",
+          PrivateIpAddress: "10.0.100.146",
+          PrivateIpAddresses: [{
+              Primary: true,
+              PrivateDnsName: "ip-10-0-100-146.ap-southeast-1.compute.internal",
+              PrivateIpAddress: "10.0.100.146"
+            }],
+          SourceDestCheck: true,
+          Status: "in-use",
+          SubnetId: "subnet-016d74b54bc7bda77",
+          VpcId: "vpc-05343b35d641c1c60"
+        }],
+      Placement: {
+        AvailabilityZone: "ap-southeast-1a",
+        GroupName: "",
+        Tenancy: "default"
+      },
+      PrivateDnsName: "ip-10-0-100-146.ap-southeast-1.compute.internal",
+      PrivateIpAddress: "10.0.100.146",
+      PublicDnsName: "",
+      RootDeviceName: "/dev/xvda",
+      RootDeviceType: "ebs",
+      SecurityGroups: [{
+          GroupId: "sg-02eb3d0d05d893ec1",
+          GroupName: "production-ec2"
+        }],
+      SourceDestCheck: true,
+      State: {
+        Code: 16,
+        Name: "running"
+      },
+      StateTransitionReason: "",
+      SubnetId: "subnet-016d74b54bc7bda77",
+      Tags: [
+        {
+          Key: "Created",
+          Value: "zhouxueli"
+        },
+        {
+          Key: "Name",
+          Value: "stg-jenkins-master-arm"
+        },
+        {
+          Key: "Project",
+          Value: "ops"
+        },
+        {
+          Key: "Applicant",
+          Value: "zhouxueli"
+        },
+        {
+          Key: "Describe",
+          Value: "stg jenkins master and gitlab runner"
+        }
+      ],
+      VirtualizationType: "hvm",
+      VpcId: "vpc-05343b35d641c1c60"
+    }],
+  OwnerId: "630045169277",
+  ReservationId: "r-01b1d53cf7bd14a8a"
+}
